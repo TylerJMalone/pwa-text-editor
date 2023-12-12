@@ -22,7 +22,7 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './index.html',
         title: 'JATE',
       }),
       new InjectManifest({
@@ -41,9 +41,9 @@ module.exports = () => {
         inject: true,
         icons: [
           {
-            src: path.resolve('src/images/icon.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('assets', 'images'),
+            destination: path.join('assets', 'icons'),
           },
         ],
       }),
